@@ -87,7 +87,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative h-screen min-h-[700px] flex items-center justify-center text-white overflow-hidden">
+      <header className="relative h-screen min-h-[700px] flex items-end justify-center text-white overflow-hidden pb-16">
         {/* Background Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -98,7 +98,7 @@ const App = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/80 via-emerald-950/50 to-stone-50"></div>
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-32">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -115,7 +115,7 @@ const App = () => {
             <p className="text-lg md:text-2xl text-emerald-50/90 max-w-2xl mx-auto font-light leading-relaxed mb-16">
               Building a permanent home for worship, community, and growth. Join us in securing the land for our future sanctuary.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6 pb-20">
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
               <a href="#progress" className="bg-white text-emerald-900 px-10 py-4 rounded-full font-bold hover:bg-stone-100 transition-all shadow-2xl hover:shadow-white/20 transform hover:-translate-y-1">
                 Track Our Progress
               </a>
