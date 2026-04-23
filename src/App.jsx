@@ -107,12 +107,12 @@ const App = () => {
             <span className="inline-block py-1.5 px-4 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-xs font-black uppercase tracking-[0.3em] mb-8 backdrop-blur-sm">
               Campaign 2026
             </span>
-            <h2 className="text-6xl md:text-8xl font-serif font-extrabold mb-8 leading-[0.95] tracking-tighter">
+            <h2 className="text-5xl md:text-8xl font-serif font-extrabold mb-8 leading-[0.95] tracking-tighter">
               RESTORE. <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">REBUILD.</span> <br/>
               RENEW.
             </h2>
-            <p className="text-xl md:text-2xl text-emerald-50/90 max-w-2xl mx-auto font-light leading-relaxed mb-12">
+            <p className="text-lg md:text-2xl text-emerald-50/90 max-w-2xl mx-auto font-light leading-relaxed mb-16">
               Building a permanent home for worship, community, and growth. Join us in securing the land for our future sanctuary.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
@@ -136,7 +136,7 @@ const App = () => {
       </header>
 
       {/* Stats Dashboard */}
-      <main className="max-w-7xl mx-auto px-6 -mt-24 relative z-20 pb-24">
+      <main className="max-w-7xl mx-auto px-6 -mt-16 md:-mt-32 relative z-20 pb-24">
         
         {/* Stat Cards */}
         <div id="progress" className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
