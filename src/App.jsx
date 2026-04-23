@@ -87,7 +87,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative h-screen min-h-[700px] flex items-end justify-center text-white overflow-hidden pb-16">
+      <header className="relative h-screen min-h-[700px] flex items-center justify-center text-white overflow-hidden">
         {/* Background Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -98,7 +98,7 @@ const App = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/80 via-emerald-950/50 to-stone-50"></div>
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-32">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center mt-32">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -107,7 +107,10 @@ const App = () => {
             <span className="inline-block py-1.5 px-4 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-xs font-black uppercase tracking-[0.3em] mb-8 backdrop-blur-sm">
               Campaign 2026
             </span>
-            <h2 className="text-5xl md:text-8xl heading-font font-extrabold mb-8 leading-[0.95] tracking-tighter">
+            <h2 
+              className="text-5xl md:text-8xl heading-font font-extrabold mb-6 leading-[0.95] tracking-tighter"
+              style={{ fontFamily: "'Outfit', sans-serif" }}
+            >
               RESTORE. <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">REBUILD.</span> <br/>
               RENEW.

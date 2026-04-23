@@ -1,25 +1,27 @@
+@import "./fonts.css";
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  :root {
+    --font-sans: var(--font-inter) !important;
+    --font-serif: var(--font-outfit) !important;
+  }
+
+  html, body {
+    font-family: var(--font-inter) !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, .heading-font {
+    font-family: var(--font-outfit) !important;
+  }
 }
 
-body {
-  background-color: #fafaf9;
-  color: #292524;
-  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Outfit", ui-serif, Georgia, serif !important;
-}
-
-.heading-font {
-  font-family: "Outfit", ui-serif, Georgia, serif !important;
-}
-
-.mono-font {
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace !important;
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+  }
 }
