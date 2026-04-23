@@ -47,7 +47,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-stone-50 font-sans text-stone-800 selection:bg-emerald-200 selection:text-emerald-900 overflow-x-hidden">
+    <div className="min-h-screen bg-stone-50 text-stone-800 selection:bg-emerald-200 selection:text-emerald-900 overflow-x-hidden">
       
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -107,7 +107,7 @@ const App = () => {
             <span className="inline-block py-1.5 px-4 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-xs font-black uppercase tracking-[0.3em] mb-8 backdrop-blur-sm">
               Campaign 2026
             </span>
-            <h2 className="text-5xl md:text-8xl font-serif font-extrabold mb-8 leading-[0.95] tracking-tighter">
+            <h2 className="text-5xl md:text-8xl heading-font font-extrabold mb-8 leading-[0.95] tracking-tighter">
               RESTORE. <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">REBUILD.</span> <br/>
               RENEW.
@@ -144,7 +144,7 @@ const App = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-stone-50 rounded-bl-[5rem] -mr-16 -mt-16 group-hover:bg-emerald-50 transition-colors" />
             <Target className="text-emerald-700 mb-6 relative z-10" size={40} />
             <p className="text-stone-400 font-bold uppercase tracking-widest text-xs mb-2 relative z-10">The Goal</p>
-            <p className="text-5xl font-serif font-black text-emerald-900 relative z-10">${goal.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+            <p className="text-5xl heading-font font-black text-emerald-900 relative z-10">${goal.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
           </motion.div>
 
           <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-emerald-900 p-10 rounded-[2.5rem] shadow-2xl shadow-emerald-900/20 text-white relative overflow-hidden group">
@@ -153,7 +153,7 @@ const App = () => {
             </div>
             <Heart className="text-amber-400 mb-6" size={40} />
             <p className="text-emerald-200/60 font-bold uppercase tracking-widest text-xs mb-2">Paid So Far</p>
-            <p className="text-5xl font-serif font-black text-white">${paid.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+            <p className="text-5xl heading-font font-black text-white">${paid.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
             <div className="mt-4 flex items-center gap-2 text-emerald-400 text-sm font-bold">
               <TrendingUp size={16} />
               <span>{percentage}% of target reached</span>
@@ -164,7 +164,7 @@ const App = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-stone-50 rounded-bl-[5rem] -mr-16 -mt-16 group-hover:bg-amber-50 transition-colors" />
             <Landmark className="text-amber-600 mb-6 relative z-10" size={40} />
             <p className="text-stone-400 font-bold uppercase tracking-widest text-xs mb-2 relative z-10">Balance Owed</p>
-            <p className="text-5xl font-serif font-black text-stone-800 relative z-10">${balance.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+            <p className="text-5xl heading-font font-black text-stone-800 relative z-10">${balance.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
           </motion.div>
         </div>
 
@@ -172,7 +172,7 @@ const App = () => {
         <section className="mb-32">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeInUp}>
-              <h3 className="text-4xl md:text-5xl font-serif font-bold text-emerald-950 mb-6 leading-tight">
+              <h3 className="text-4xl md:text-5xl heading-font font-bold text-emerald-950 mb-6 leading-tight">
                 Visualizing Our <br/>
                 <span className="text-amber-600">Growth Journey</span>
               </h3>
@@ -203,7 +203,7 @@ const App = () => {
         {/* Vision Gallery */}
         <section id="vision" className="mb-32 scroll-mt-32">
           <div className="text-center mb-16">
-            <h3 className="text-4xl md:text-5xl font-serif font-bold text-emerald-950 mb-4">The Vision</h3>
+            <h3 className="text-4xl md:text-5xl heading-font font-bold text-emerald-950 mb-4">The Vision</h3>
             <p className="text-stone-500 max-w-2xl mx-auto italic">"And let them make me a sanctuary; that I may dwell among them." — Exodus 25:8</p>
           </div>
 
@@ -212,7 +212,7 @@ const App = () => {
               <img src="/assets/vision_before.png" alt="Before" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-12">
                 <span className="bg-white/20 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full w-max mb-4">The Beginning</span>
-                <h4 className="text-3xl font-serif font-bold text-white mb-2">Our Current Stand</h4>
+                <h4 className="text-3xl heading-font font-bold text-white mb-2">Our Current Stand</h4>
                 <p className="text-stone-300">The sacred ground where our journey starts.</p>
               </div>
             </motion.div>
@@ -221,7 +221,7 @@ const App = () => {
               <img src="/assets/vision_after.png" alt="After" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-950/20 to-transparent flex flex-col justify-end p-12">
                 <span className="bg-amber-500 text-emerald-950 text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full w-max mb-4">The Promise</span>
-                <h4 className="text-3xl font-serif font-bold text-white mb-2">Future Sanctuary</h4>
+                <h4 className="text-3xl heading-font font-bold text-white mb-2">Future Sanctuary</h4>
                 <p className="text-emerald-100/80">A permanent home for generations to come.</p>
               </div>
             </motion.div>
@@ -252,22 +252,22 @@ const App = () => {
                   <div className="grid sm:grid-cols-2 gap-8">
                     <div>
                       <p className="text-emerald-400 text-[10px] font-black uppercase tracking-widest mb-2">Institution</p>
-                      <p className="text-3xl font-serif font-bold">CBZ Bank</p>
+                      <p className="text-3xl heading-font font-bold">CBZ Bank</p>
                     </div>
                     <div>
                       <p className="text-emerald-400 text-[10px] font-black uppercase tracking-widest mb-2">Account Name</p>
-                      <p className="text-3xl font-serif font-bold">Mabelreign South Church</p>
+                      <p className="text-3xl heading-font font-bold">Mabelreign South Church</p>
                     </div>
                     <div>
                       <p className="text-emerald-400 text-[10px] font-black uppercase tracking-widest mb-2">Branch Location</p>
-                      <p className="text-3xl font-serif font-bold">Avondale</p>
+                      <p className="text-3xl heading-font font-bold">Avondale</p>
                     </div>
                   </div>
 
                   <div>
                     <p className="text-emerald-400 text-[10px] font-black uppercase tracking-widest mb-4">Account Number</p>
                     <div className="flex flex-col sm:flex-row gap-4 items-stretch">
-                      <div className="flex-1 bg-emerald-950/50 border-2 border-emerald-700/50 rounded-3xl px-8 py-6 text-4xl md:text-5xl font-mono tracking-tighter text-amber-400 flex items-center justify-center sm:justify-start">
+                      <div className="flex-1 bg-emerald-950/50 border-2 border-emerald-700/50 rounded-3xl px-8 py-6 text-4xl md:text-5xl mono-font tracking-tighter text-amber-400 flex items-center justify-center sm:justify-start">
                         61291540013
                       </div>
                       <button 
@@ -289,7 +289,7 @@ const App = () => {
               <div className="lg:col-span-2 space-y-8">
                 <div className="bg-emerald-800/40 backdrop-blur-xl rounded-[3rem] p-10 border border-emerald-700/50 h-full flex flex-col justify-between">
                   <div>
-                    <h5 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3 text-amber-400">
+                    <h5 className="text-2xl heading-font font-bold mb-6 flex items-center gap-3 text-amber-400">
                       <Mail size={28} />
                       In-Person Giving
                     </h5>
@@ -326,7 +326,7 @@ const App = () => {
             <div className="col-span-2">
               <div className="flex items-center gap-4 mb-8">
                 <img src="/assets/logo.png" alt="Logo" className="w-12 h-12 grayscale brightness-50" />
-                <h6 className="font-serif font-bold text-2xl text-emerald-900">Mabelreign South SDA</h6>
+                <h6 className="heading-font font-bold text-2xl text-emerald-900">Mabelreign South SDA</h6>
               </div>
               <p className="text-stone-500 max-w-sm mb-8 leading-relaxed">
                 Dedicated to restoring, rebuilding, and renewing our faith community through faith and collective action.
