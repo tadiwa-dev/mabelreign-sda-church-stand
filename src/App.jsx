@@ -115,7 +115,7 @@ const App = () => {
             <p className="text-lg md:text-2xl text-emerald-50/90 max-w-2xl mx-auto font-light leading-relaxed mb-16">
               Building a permanent home for worship, community, and growth. Join us in securing the land for our future sanctuary.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <div className="flex flex-col sm:flex-row justify-center gap-6 pb-20">
               <a href="#progress" className="bg-white text-emerald-900 px-10 py-4 rounded-full font-bold hover:bg-stone-100 transition-all shadow-2xl hover:shadow-white/20 transform hover:-translate-y-1">
                 Track Our Progress
               </a>
@@ -136,7 +136,7 @@ const App = () => {
       </header>
 
       {/* Stats Dashboard */}
-      <main className="max-w-7xl mx-auto px-6 -mt-16 md:-mt-32 relative z-20 pb-24">
+      <main className="max-w-7xl mx-auto px-6 relative z-20 pb-24">
         
         {/* Stat Cards */}
         <div id="progress" className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
